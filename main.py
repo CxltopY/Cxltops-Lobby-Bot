@@ -26,14 +26,9 @@ except ModuleNotFoundError as e:
 
 os.system('cls||clear')
 
-intro = Fore.LIGHTRED_EX + """
+intro = Fore.LIGHTBLUE_EX + """
   -----------------------------------------------------
-  |   ██╗  ██╗███████╗███╗   ██╗███████╗██╗███████╗   |
-  |   ╚██╗██╔╝██╔════╝████╗  ██║██╔════╝██║██╔════╝   |
-  |    ╚███╔╝ █████╗  ██╔██╗ ██║███████╗██║███████╗   |
-  |    ██╔██╗ ██╔══╝  ██║╚██╗██║╚════██║██║╚════██║   |
-  |   ██╔╝ ██╗███████╗██║ ╚████║███████║██║███████║   |
-  |   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝╚══════╝   |
+  |   CXLTOPS LOBBY BOT
   -----------------------------------------------------
 """
 
@@ -42,7 +37,7 @@ print(intro)
 response = requests.get("https://benbot.app/api/v1/status")
 patch = response.json()["currentFortniteVersion"]
 
-print(f'\n A free lobbybot network, created by KaosDrip. Fixed by Aspect#0002 for Patch {patch}.\n')
+print(f'\n A free lobbybot network, created by CxltopY. Fixed by Yameaan for Patch {patch}.\n')
 
 def lenPartyMembers():
     members = client.party.members
@@ -289,13 +284,13 @@ async def event_friend_message(message):
 @client.event
 async def event_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
-        await ctx.send(f'That is not a command. Try {prefix}help')
+        await ctx.send(f'Broskie. That Aint a Command. Try {prefix}help')
     elif isinstance(error, IndexError):
         pass
     elif isinstance(error, fortnitepy.HTTPException):
         pass
     elif isinstance(error, commands.CheckFailure):
-        await ctx.send("You don't have access to that command.")
+        await ctx.send("Add youtube cxltop y and ask him for admin to use the command.")
     elif isinstance(error, TimeoutError):
         await ctx.send("You took too long to respond!")
     else:
