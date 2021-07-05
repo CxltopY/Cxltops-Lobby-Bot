@@ -20,8 +20,9 @@ You will need Python 3.6 or higher for this bot to run.
 
 ### Installing
 
-A step by step series of examples that tell you how to get the bot running.
-Important step when making repll.it jus click run button then do the steps
+
+IMPORTANT --> step when making repll.it jus click run button then do the steps
+
 
 Step 1.
 
