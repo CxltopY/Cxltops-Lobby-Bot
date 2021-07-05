@@ -31,7 +31,7 @@ Step 1.
 
 Step 2.
 
-> Dont Do Anything til its done
+> Dont Do Anything til the run button goes Green again
 
 
 Step 3.
