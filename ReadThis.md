@@ -1,16 +1,22 @@
 
-Welcome!
-- Im Making New Commands!
+[![GitHub stars](https://img.shields.io/github/stars/KaosDrip/Xensis.svg)](https://github.com/KaosDrip/Xensis/stargazers)
+[![Python version](https://img.shields.io/badge/python%2C%203.6%2C%203.7%2C%203.8%2C%203.9-blue.svg)](https://python.org)
+# New Update! Added Auto-Updater.
+Things to fix:
+- +hide (user)
+- +copy
+- +block
 
-# YouTube Cxltop Y
+# cxltop
 
-The Best Lobby Bot Ever!
+A good Fortnite lobby bot with a handful of features.
 
 > Discord server: <a href="https://discord.gg/p68vuqFzww" target="_blank">Cxltops Bots</a>
 
 ## Getting Started
 
-Read Everything At The Bottom!
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 ### Prerequisites
 
 You will need Python 3.6 or higher for this bot to run.
@@ -18,38 +24,6 @@ You will need Python 3.6 or higher for this bot to run.
 > <a href="https://www.python.org/downloads/release/python-360/" target="_blank">Python 3.6+</a>
 
 
-### Installing
+#How to use the Commands. 
 
-
-IMPORTANT --> step when making repll.it jus click run button then do the steps
-
-
-Step 1.
-
-> "Go In Packages On The Left" And download BenBotAsync 3.0.1 IF IT HAS A RED BUTTON YOUR GOOD TO GO ALREADY
-
-
-Step 2.
-
-> Dont Do Anything til the run button goes Green again
-
-
-Step 3.
-
-> Go In The Config files and change what u want
-
-Step 4.
-
-> Create a new epic games account for the bot.
-
-Step 5.
-
-Step 6.
-
-> Click The Run Button And wait until you get a captcha"
-
-
-
-## Use This Link To Get The Code After Sign in
-> <a
-href = "https://www.epicgames.com/id/login/epic?redirect_uri=https%3A%2F%2Fwww.epicgames.com%2Fid%2Fapi%2Fredirect%3FclientId%3D3446cd72694c4a4485d81b77adbb2141%26responseType%3Dcode"
+type +help in the fortnite chat, if u want all the commands join my discord server. https://discord.gg/p68vuqFzww.
