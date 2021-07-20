@@ -1343,6 +1343,18 @@ async def say(ctx, *, message = None):
     if message is not None:
         await client.party.send(message)
         await ctx.send(f'Sent "{message}" to party chat')
+
+
+@commands.party_only()
+@client.command()
+@is_admin()
+async def SaySum(ctx, *, message = None):
+    if message is not None:
+        await client.party.send(message)
+        await ctx.send(f'Sent "{message}" to party chat')
+
+
+
     else:
         await ctx.send(f'No message was given. Try: {prefix}say (message)')
 
@@ -1401,6 +1413,43 @@ async def match(ctx, players = None):
 
             await asyncio.sleep(6)
             await client.party.me.clear_in_match()
+
+
+@commands.party_only()
+@client.command()
+@is_admin()
+async def game(ctx, players = None):
+    time = datetime.utcnow()
+    if players is not None:
+        if 'auto' in players.lower():
+            if client.party.me.in_match():
+                left = client.party.me.match_players_left
+            else:
+                left = 100
+            await client.party.me.set_in_match(players_left=left, started_at=time)
+
+            await asyncio.sleep(rand.randint(20, 30))
+
+            while client.party.me.match_players_left > 5 and client.party.me.in_match():
+                await client.party.me.set_in_match(players_left=client.party.me.match_players_left - rand.randint(3, 5), started_at=time),
+
+                await asyncio.sleep(rand.randint(8, 18))
+
+            while (client.party.me.match_players_left <= 5) and (client.party.me.match_players_left > 3):
+                await client.party.me.set_in_match(players_left=client.party.me.match_players_left - rand.randint(1, 2), started_at=time)
+
+                await asyncio.sleep(rand.randint(12, 20))
+
+            while (client.party.me.match_players_left <= 3) and (client.party.me.match_players_left > 1):
+                await client.party.me.set_in_match(players_left=client.party.me.match_players_left - 1, started_at=time)
+
+                await asyncio.sleep(rand.randint(12, 20))
+
+            await asyncio.sleep(6)
+            await client.party.me.clear_in_match()
+
+
+
 
         elif 'leave' in players.lower():
             await client.party.me.clear_in_match()
